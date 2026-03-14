@@ -1,28 +1,20 @@
+import UsersTable from "@/components/tables/users-table";
+
 export default function UsersPage() {
   return (
-    <div>
+    <div className="space-y-6">
 
-      <h1 className="text-2xl font-bold mb-6">Users</h1>
+      <div className="flex justify-between items-center">
 
-      <table className="w-full border">
+        <h1 className="text-2xl font-bold">Users</h1>
 
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="p-3 border">Name</th>
-            <th className="p-3 border">Email</th>
-            <th className="p-3 border">Role</th>
-          </tr>
-        </thead>
+        <button className="bg-black text-white px-4 py-2 rounded-md">
+          Add User
+        </button>
 
-        <tbody>
-          <tr>
-            <td className="p-3 border">John</td>
-            <td className="p-3 border">john@email.com</td>
-            <td className="p-3 border">Admin</td>
-          </tr>
-        </tbody>
+      </div>
 
-      </table>
+      <UsersTable />
 
     </div>
   );
